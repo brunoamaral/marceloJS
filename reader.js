@@ -35,6 +35,16 @@ function measure(){
 	};	
 };
 
+function scrollDepth(){
+		var scrollTop = window.pageYOffset;
+		var docHeight = Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
+		var winHeight = window.innerHeight;
+		var scrollPercent = (scrollTop) / (docHeight - winHeight);
+		var scrollPercentRounded = Math.round(scrollPercent*100);
+
+	    console.log(scrollPercentRounded);
+}
+
 var timer = setTimeout(measure, 100);
 
 function numberOfReadings(){
