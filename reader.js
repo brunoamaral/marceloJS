@@ -41,7 +41,7 @@ function measure(){
 	if (read_ratio >= 0.75 && scrolled75 && !ga_event_sent){
 		if (!debug) {
 			//ga('send', 'event', [eventCategory], [eventAction], [eventLabel], [eventValue], [fieldsObject]);
-			ga('send', 'event', 'Reader Actions', 'User Read Article', window.location.href);
+			ga('send', 'event', 'Reader Actions', 'User Read Article', window.location.href, { nonInteraction: true});
 			ga_event_sent = true;
 			// another option would be document.title;
 		}else{
