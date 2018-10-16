@@ -28,7 +28,7 @@ window.addEventListener('scroll', function(e) {
 	};
 });
 
-// This funciotn runs every 100 miliseconds and checks if the reading time and time on page ratio is acceptable to mark it as read.
+// This function runs every 100 miliseconds and checks if the reading time and time on page ratio is acceptable to mark it as read.
 function measure(){
 	if(debug){console.log('running')}
 	var currentDate = new Date();
@@ -57,5 +57,5 @@ window.setInterval(function(){
 }, 100);
 
 function numberOfReadings(){
-	console.log('TO DO. This function collects data from google analytics and updates the metadata of the post.')
+	console.log('TODO. This function collects data from google analytics and updates the metadata of the post.')
 }
